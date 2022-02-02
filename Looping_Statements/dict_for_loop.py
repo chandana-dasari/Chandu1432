@@ -137,11 +137,68 @@ for word in range(len(names)):
         d[names[word]] += [word]
 print(d)
 '''
-d = {'a': 1, 'b': 2, 'c': 3}
-# for
+'''s = 'hello world welcome to python programming hi there'
+a = s.split()
+d = {}
+for item in a:
+    if item[0] not in d:
+        d[item[0]] = [item]
+    else:
+        d[item[0]].append(item)
+print(d)
+'''
+
+# s = 'hello world'
+# d = {}
+# for i in s:
+#     d[i] = ord(i)
+#print(d)
+
+s = 'hello hi  how hello'
+a = s.split()
+d = {}
+# for i in a:
+#     d[i] = a.count(i)
+# print(d)
+
+# for i in s:
+#     d[i] = s.count(i)
+# print(d)
+# for word in a:
+#     d[word] = len(word)
+# print(d)
+# for index, item in enumerate(a):
+#     d[item] = index
+# print(d)
+# d = {'a': 'hai','b': 'helo','c':'python'}
+# # for index, (key, value) in enumerate(d.items()):
+# #     print(index, (key, value))
+# d1 = {}
+# for key, value in d.items():
+#     #print(key, value)
+#     if len(value) % 2 == 0:
+#          d1[value] = key
+#     else:
+#         d1[key] = value
+# print(d1)
+
+# s = 'hi hello excuse me hi'
+# li = s.split()
+# d={}
+# for i in li:
+#     if len(i) % 2 == 0:
+#         d[i] = li.count(i)
+#     else:
+#         d[i] = i
+# print(d)
 
 
-    #print(index,item)
+
+
+
+
+
+
 
 
 
