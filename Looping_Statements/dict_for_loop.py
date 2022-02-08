@@ -192,7 +192,28 @@ d = {}
 #         d[i] = i
 # print(d)
 
+# s = 'python is a programming language'
+# d = {}
+# #count = 0
+# for char in s:
+#     d[char] = s.count(char)
+#
+# print(d)
 
+# d = {'a':1,'b':2}
+# from collections import defaultdict
+# dd = defauldict()
+# for char in
+
+s = 'hello world'
+a = s.split()
+d = {}
+for char in s:
+    if char not in d:
+        d[char] = 1
+    else:
+        d[char] += 1
+print(d)
 
 
 

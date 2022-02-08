@@ -105,12 +105,33 @@ val = []
 #     else:
 #         print(num)
 
-s = {'python', 'hyderabad', 'hai'}
-key = 'hello'
-print(s.remove(key))
+s = ['python', 'hyderabad', 'hai']
+# key = 'hello'
+# print(s.remove(key))
+#
+# for ele in s:
+#      if ele == key:
+#         s.remove(key)
+#         #break
+        #print(s)
+# key = 'hai'
+# a = [s.index(0) for i in s]
+# print(a)
+# #print(s)
 
-for ele in s:
-     if ele == key:
-        s.remove(key)
-        #break
-        print(s)
+
+# l = ['apple','banana','apple']
+# # l1 = [l.index(item) for item in l if item in l]
+# # print(l1)
+# for i in l:
+#     for j in i:
+
+files = ['apple.txt','yahoo.pdf']
+d = {}
+for file in files:
+    a = file.split(".")
+    #for item in a:
+    d[a[1]] = a[0]
+print(d)
+
+

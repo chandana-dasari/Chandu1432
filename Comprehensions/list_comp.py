@@ -92,11 +92,43 @@ print(res)
 #     print(str_[j])
 #     o
 
-string = 'malayalam'
-a = 'l'
-for i in string:
-    if i == a:
-        print(string[i])
-        break
+# string = 'malayalam'
+# a = 'l'
+# for i in string:
+#     if i == a:
+#         print(string[i])
+#         break
+# from itertools import zip_longest
+# c = ['a', 'b', 'c', 'd']
+# p = [97, 98, 99]
+# l = [(char, num) for char, num in zip_longest(c,p)]
+# print(l)
+
+# l = {1,2,3,4,5,6,7}
+# a, *rest, b = l
+#
+# print(a)
+# print(rest)
+# print(b)
+
+
+# files = ['youtube.txt', 'apple.pdf']
+# l = [item for item in files if len(item) % 2 != 0]
+# print(l)
+
+# a = [1, 2, 3, 4, 5]
+# l = [item ** index for index, item in enumerate(a)]
+# print(l)
+
+# items = ['apple', 1.2, 'google', '12.6', 26, '100']
+# n = 3
+#
+# for item in range(n):
+#     a = item.pop()
+#     items.append(a)
+# print(items)
+
+
+
 
 
