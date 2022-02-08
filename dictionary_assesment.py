@@ -199,12 +199,16 @@ files = ['apple.txt', 'amazon.pdf', 'yahoo.txt','flipkart.pdf']
 # t = [('Delhi', 32), ('Mumbai', 27)]
 # print(sorted(t, key=lambda item: item[-1]))
 
-s = 'python is a programming language and programming is very fun'
-l = s.split()
-d = {word:len(word) for word in l if l.count(word) == 1}
-print(d)
-res = sorted(d.items(), key=lambda item: item[-1])
-print(res[-1])
+# s = 'python is a programming language and programming is very fun'
+# l = s.split()
+# d = {word:len(word) for word in l if l.count(word) == 1}
+# print(d)
+# res = sorted(d.items(), key=lambda item: item[-1])
+# print(res[-1])
+
+
+[{'name':'Ram', 'class': 6, 'age': 12}
+ {'name':'shyam'}]
 
 
 
