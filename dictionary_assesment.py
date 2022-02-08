@@ -191,11 +191,20 @@ files = ['apple.txt', 'amazon.pdf', 'yahoo.txt','flipkart.pdf']
 #
 # print(sorted(li, key=mid_ch))
 
-d = {'gmail':5, 'apple': 13, 'walmart': 1, 'flipkart': 38}
-#print(sorted(d, key=lambda item: item[-1]))
-print(sorted(d.values()))
-print(sorted(d.items(), key=lambda item: item[len(item[-1])]))
+# d = {'gmail':5, 'apple': 13, 'walmart': 1, 'flipkart': 38}
+# #print(sorted(d, key=lambda item: item[-1]))
+# print(sorted(d.values()))
+# print(sorted(d.items(), key=lambda item: item[len(item[-1])]))
 
+# t = [('Delhi', 32), ('Mumbai', 27)]
+# print(sorted(t, key=lambda item: item[-1]))
+
+s = 'python is a programming language and programming is very fun'
+l = s.split()
+d = {word:len(word) for word in l if l.count(word) == 1}
+print(d)
+res = sorted(d.items(), key=lambda item: item[-1])
+print(res[-1])
 
 
 
