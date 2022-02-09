@@ -207,8 +207,13 @@ files = ['apple.txt', 'amazon.pdf', 'yahoo.txt','flipkart.pdf']
 # print(res[-1])
 
 
-[{'name':'Ram', 'class': 6, 'age': 12}
- {'name':'shyam'}]
+li = [{'name': 'Ram', 'class': 6, 'age': 12},
+      {'name': 'shyam', 'class': 12,  'age': 18},
+      {'name': 'John', 'class': 8, 'age': 13}]
+
+print(sorted(li, key=lambda item: item['name']))
+print(sorted(li, key=lambda item: item['class']))
+print(sorted(li, key=lambda item: item['age']))
 
 
 
