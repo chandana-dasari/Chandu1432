@@ -46,7 +46,7 @@
 # dict_ = {index: item if isinstance(item, str) else item[::-1] for index,item in enumerate(l)}
 # print(dict_)
 
-d = {'a': 1, 'b': 2, 'c': 3,'d': 4, 'e': 5}
+#d = {'a': 1, 'b': 2, 'c': 3,'d': 4, 'e': 5}
 # res = {}
 # for key, value in d.items():
 #     res[value] = key
@@ -55,9 +55,60 @@ d = {'a': 1, 'b': 2, 'c': 3,'d': 4, 'e': 5}
 # dict_ = {value: key for key, value in d.items()}
 # print(dict_)
 #
-d2 = {d[key]:key for key in d}
-print(d2)
+# d2 = {d[key]:key for key in d}
+# print(d2)
 
 # s = 'hello world'
 # dict_ = {char: ord(char) for char in s}
 # print(dict_)
+
+# d = {'a': [1, 2, 3], 'b': [1, 2], 'c': [1, 3, 5, 7, 6]}
+# a = sorted(d.items(), key=lambda item: len(item[-1]))
+# print(dict(a))
+
+
+# k = ['a', 'b', 'c', 'd']
+# v = [2500, 5000, 2000, 1000]
+# d = dict([(k[0],v[0]), (k[1], v[1]), (k[2], v[2]), (k[3], v[3])])
+# print(d)
+# a = sorted(d.items(), key=lambda item: (item[-1]), reverse=True)
+# print(dict(a))
+
+names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
+# from collections import defaultdict
+# dd = defaultdict(list)
+# for index, item in enumerate(names):
+#     dd[item] += [index]
+# print(dd)
+print("=============")
+d = {}
+for index, item in enumerate(names):
+    if item not in d:
+        d[item] = [index]
+    else:
+        d[item] += [index]
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

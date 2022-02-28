@@ -124,11 +124,37 @@ print(res)
 # n = 3
 #
 # for item in range(n):
-#     a = item.pop()
-#     items.append(a)
+#      a = item.pop()
+#      items.append(a)
 # print(items)
+# prices = {'ACME': 45.32, 'AAPL': 612.78, 'HPQ': 37.20}
+# # print(type(prices['HPQ']))
+# d = {item: prices[item] for item in prices if prices[item] > 40}
+# s = sorted(d.items(), key = lambda item: item)
+# print(d)
+# print(s)
 
+# s = "This is a programming language and programming is fun"
+# list_ = s.split()
+# d = {word: len(word) for word in list_ if list_.count(word) == 1}
+# res = sorted(d.items(), key=lambda item: item)
+# print(res[-1])
 
+# def func(s1, s2):
+#      if len(s1) == len(s2):
+#           for i in s1:
+#                for j in s2:
+#                     if i == j:
+#                          return True
+#
+#
+# print(func('teat','eath'))
 
+l = [1, 2, 3, 4, 5]
+res = [i * i for i in l]
+print(res)
 
-
+#
+#
+#
+#

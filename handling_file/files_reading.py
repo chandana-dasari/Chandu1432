@@ -142,10 +142,16 @@ path = r"C:\Users\Jagadeesh\PycharmProjects\Chandu1432\directory_file\files_dire
 #                     d[word] += 1
 #     print(d)
 
+# with open(path) as file:
+#     for line in file:
+#         if line.strip():
+#             print(len(line), end=" ")
+
 with open(path) as file:
+    count = 0
     for line in file:
-        if line.strip():
-            print(len(line), end=" ")
+        count += 1
+    print(count)
 
 
 

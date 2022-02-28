@@ -61,6 +61,8 @@ d = {}
 
 
 
-def func(*a):
-    print(a)
-func(1,2)
+# def func(*a):
+#     print(a)
+# func(1,2)
+
+
