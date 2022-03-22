@@ -95,22 +95,57 @@
 #         res = func(*args, **kwargs)
 #         if b == 0:
 #             return f"{b} cannot be a divisor"
-#         return res
-#     return wrapper
-# def div(a, b):
-#     return a/b
+# #         return res
+# #     return wrapper
+# # def div(a, b):
+# #     return a/b
+# #
+# # d = div(a = 6, b = 2)
+# # print(d)path = r"C:\Users\Jagadeesh\PycharmProjects\Chandu1432\directory_file\files_directory\txt_log_files\access-log.txt"
 #
-# d = div(a = 6, b = 2)
+# from collections import Counter
+# with open(path) as file:
+#     l = []
+#     for line in file:
+#         if line.strip():
+#             word = line.split()
+#             l.append(word[0])
+# d = Counter(l)
 # print(d)
+#
+#
+# def most_common(param):
+#     pass
+# print(most_common(2))
+
+
+    # file_ = file.read()
+    # print(file_)
+    # print(file.tell())
+    # print(file.seek(5))
+    # print(file.tell())
+
+    # count = 0
+    # for line in file:
+    #     l = line.split()
+    #     if l[0] in "aeiouAEIOU":
+    #         count += 1
+    #
+    # print(count)
 
 
 
 
 
+# path = r"C:\Users\Jagadeesh\PycharmProjects\Chandu1432\directory_file\files_directory\txt_log_files\sample.txt"
+# from itertools import islice
+# #n = 3
+# with open(path) as file:
+#     res = islice(file, 3, 10, 3)
 
+with open("demo.txt","w") as file:
+    #file.readlines()
 
-
-
-
+    file.writelines(['integer\n', 'float\n', 'complex\n', 'string\n', 'list'])
 
 

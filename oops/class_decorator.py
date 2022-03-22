@@ -139,10 +139,43 @@ import time
 #     print("executing delay")
 #
 # d = delay()
+# def p_outer(n):
+#     def outer(func):   #func= add
+#         # func.count = 0
+#         def wrapper(*args, **kwargs):
+#             for i in range(n):
+#                 func(*args, **kwargs)  #add(a, b)
+#             # func.count += 1
+#             # print(func.count)
+#             #return result
+#         return wrapper
+#     return outer#address
+# @p_outer(2)  #add = outer(add)
+# def add(a,b):
+#     print(a+b)
+# add(1,3)
+#
+#
+# import time
+# class Sample:
+#     def __init__(self, func):
+#         self.func = func
+#     def __call__(self, *args, **kwargs):
+#         print("chandana")
+#         start = time.time()
+#         re = self.func(*args, **kwargs)
+#         end = time.time()
+#         print(f"{end-start}")
+#         return re
+#
+# @Sample
+def mul(a , b):
+    print(a * b)
 
 
+mul(9,7)
 
-
-
-
+#d.__class__.mul(1,3)
+# Sam.mul(6,5)
+# d.mul(6,5)
 

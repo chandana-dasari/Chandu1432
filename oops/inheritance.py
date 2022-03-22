@@ -59,27 +59,66 @@
 #         print(self.fname, self.mname, Dad.lname)
 #         super().disp()
 
-class Parent:
-    lname = 'roy'
-    # def __init__(self, lname):
-    #     self.lname = lname
-    def disp(self):
-        return f"lastname is {Parent.lname}"
-class Dad(Parent):
-    def __init__(self, fname, mname):
-        self.fname = fname
-        self.mname = mname
+# class Parent:
+#     lname = 'roy'
+#     # def __init__(self, lname):
+#     #     self.lname = lname
+#     def disp(self):
+#         return f"lastname is {Parent.lname}"
+# class Dad(Parent):
+#     def __init__(self, fname, mname):
+#         self.fname = fname
+#         self.mname = mname
+#
+#     def get_(self):
+#         #super().disp()
+#         print(self.fname, self.mname, Parent.lname)
+#         #super().disp()
+#
+# d = Parent()
+# print(d.disp())
+# d1 = Dad('sree','kanth')
+# d1.get_()
+#
 
-    def get_(self):
-        #super().disp()
-        print(self.fname, self.mname, Parent.lname)
-        #super().disp()
 
-d = Parent()
-print(d.disp())
-d1 = Dad('sree','kanth')
-d1.get_()
-
-
-
-
+#s = "abcdddbdaefgabcdji:abcdcdedbag"
+# import re
+# a = re.findall(r"abcd", s)
+# sum = 0
+# for i in a:
+#     #print(i)
+#     sum += 1
+# print(sum)
+#count = 0
+# s = "abcdddbdaefgabcdji:abcdcdedbag"
+# string = 'abcd'
+# x = ''
+# for i in s:
+#     count = 0
+#     x += i
+#     if len(x) == 4 and x == 'abcd':
+#         count += 1
+# print(count)
+#
+# #print(x)
+# #
+# i = 0
+# while i < = len(s):
+def compression(string):
+    alist = list(string)
+    master = []
+    n = len(alist)
+    for i in range(n):
+        if alist[i] == alist[i-1]:
+            master[-1] += alist[i]
+        else:
+            master += alist[i]
+    newstring = ''
+    for i in master:
+        newstring += i[0] + str(len(i))
+    if len(newstring) > n:
+        return string
+    return newstring
+string = 'aabbdeeccc'
+print(compression(string))

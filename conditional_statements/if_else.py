@@ -119,3 +119,27 @@ else:
     print('Given character is a consonant')
 
 '''
+# l1 = [3,4,5,6]
+# l2 = [6, 8, 5, 4]
+# def even(n1, n2):
+#     return (n1+n2)
+# res = map(even,l1, l2)
+# print(list(res))
+# print(res)
+
+# l = [('erty', 'dfgfg') , ('tuuy', 'tyuiu'), ('ewfrd', 'frdcvggvfbh')]
+# res1 = map(lambda item: item[-1], l)
+# print(sorted(res1))
+#
+# #for ite
+
+
+# l = [4, 5, 6, 7, 8]
+# def even(n):
+#     #for i in n:
+#     if n % 2 == 0:
+#         return n
+# print(list(map(even, l)))
+
+print(list(filter(even, l)))
+# print(e)
