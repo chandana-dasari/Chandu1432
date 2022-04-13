@@ -134,12 +134,5 @@ else:
 # #for ite
 
 
-# l = [4, 5, 6, 7, 8]
-# def even(n):
-#     #for i in n:
-#     if n % 2 == 0:
-#         return n
-# print(list(map(even, l)))
-
 print(list(filter(even, l)))
 # print(e)
